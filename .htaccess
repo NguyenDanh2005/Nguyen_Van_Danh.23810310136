@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /Lap5/
+
+# If the requested file or directory doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Redirect to index.php
+RewriteRule ^$ index.php [L]

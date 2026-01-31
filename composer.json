@@ -1,0 +1,9 @@
+{
+    "name": "lab5/mvc",
+    "description": "MVC CRUD Application",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
